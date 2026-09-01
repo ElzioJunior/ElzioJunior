@@ -75,6 +75,35 @@ I build backend systems, developer tools, AI-assisted workflows, and experiments
 <tr>
   <td width="50%" valign="top">
 
+  ### 🏦 [Simplified Banking Service](https://github.com/ElzioJunior/simplified-banking-service)
+  
+  A **production-minded banking API** designed to manage accounts, transfers, and account movements with strong consistency, observability, and reliability guarantees.
+  
+  The system provides deterministic financial operations with idempotent transfers, concurrency control, asynchronous notifications, paginated movement history, and a complete local environment for running and observing the product.
+  
+  **Highlights**
+  
+  - 🏗️ Java + Spring Boot backend
+  - 🗄️ PostgreSQL persistence with Flyway migrations
+  - 💸 Atomic account-to-account transfers
+  - 🔐 Idempotency protection for duplicate transfer requests
+  - 🔒 Concurrency control and bounded database locks
+  - 🐇 Asynchronous transfer notifications through RabbitMQ
+  - 📄 Paginated account movements filtered by date range and credit/debit type
+  - 📚 Swagger/OpenAPI documentation with request and validation examples
+  - 📊 Prometheus metrics and preconfigured Grafana dashboards
+  - ⚡ Gatling load and concurrency test scenarios
+  - 🧪 Unit, isolated functional, and focused real-boundary integration tests
+  - 🐳 Complete local environment provided through Docker Compose
+  - 🤖 Engineering delivery supported by carefully designed agents, workflows, and skills
+  - 📝 Architecture and business decisions documented through ADRs and BDRs
+  
+  Financial correctness remains deterministic: balance validation, transfer state changes, locking, idempotency, and transaction boundaries are enforced by the application and database. Asynchronous integrations are kept outside the financial transaction so external failures do not compromise committed banking operations.
+  
+  </td>
+  
+  <td width="50%" valign="top">
+
   ### 🚧 [RAG Pipeline for Software Projects](https://github.com/ElzioJunior/rag-pipeline-for-software-projects)
   
   > **STATUS: 🟡 TODO / DOING — under active design and construction**
@@ -96,7 +125,9 @@ I build backend systems, developer tools, AI-assisted workflows, and experiments
   > The objective is to create a reusable context-retrieval layer that lets AI systems query **the right project knowledge at the right time**, rather than loading the entire codebase into every interaction.
   
   </td>
-  
+</tr>
+
+<tr>
   <td width="50%" valign="top">
   
   ### 🧵 [Virtual Threads Stress Test](https://github.com/ElzioJunior/virtual-threads-stress-test)
@@ -117,9 +148,7 @@ I build backend systems, developer tools, AI-assisted workflows, and experiments
   > The goal is not to claim a production benchmark, but to provide a reproducible environment for understanding how Virtual Threads behave when many concurrent operations spend most of their time waiting.
   
   </td>
-</tr>
-
-<tr>
+  
   <td width="50%" valign="top">
   
   ### 📚 [Stacks New Features](https://github.com/ElzioJunior/stacks-new-features)
@@ -138,29 +167,6 @@ I build backend systems, developer tools, AI-assisted workflows, and experiments
   
   </td>
 
-  <td width="50%" valign="top">
-
-  ### 🧰 [Dev Tools](https://github.com/ElzioJunior/dev-tools)
-  
-  A growing **developer toolbox for recurring Java and backend engineering tasks**.
-  
-  This repository collects practical snippets, configurations, examples, and utilities that are useful during everyday development and troubleshooting.
-  
-  Examples include:
-  
-  - ☕ Java utility patterns
-  - ⚡ Asynchronous and parallel request examples
-  - 🔀 Functional programming and predicates
-  - 📨 Kafka producers, consumers, and dead-letter configurations
-  - 🐳 Local Kafka/Docker environments
-  - 📊 Gatling performance-test examples
-  - 🔎 Grafana query helpers
-  - 🧪 Runtime testing utilities
-  - 🏗️ CI/CD and SonarQube configuration examples
-  
-  > A pragmatic collection built around one principle: **if I solve the same engineering problem twice, it probably belongs in a reusable toolbox.**
-  
-  </td>
 </tr>
 </table>
 
